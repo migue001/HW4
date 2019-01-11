@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion1"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="Aprende"
+        android:iconTint="@color/iconis"
+        />
+    <item
+        android:id="@+id/opcion22"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="Asistente"
+        android:iconTint="@color/iconis"
+        />
+    <!--<item
+    android:iconTint="@color/iconis"
+    android:id="@+id/opcion5"
+    android:icon="@drawable/ic_action_hear"
+    android:title="Comunicar"
+    />-->
+    <item
+        android:id="@+id/opcion33"
+        android:icon="@drawable/periodico"
+        android:title="Historias"
+        android:iconTint="@color/iconis"
+        />
+    <item
+        android:iconTint="@color/iconis"
+        android:id="@+id/opcion4"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Informacion"
+    />
+
+</menu>

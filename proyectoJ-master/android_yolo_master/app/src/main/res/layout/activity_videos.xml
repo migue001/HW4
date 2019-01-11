@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Videos"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contenedorVideo">
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/video"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+android:id="@+id/contenedorcontroles"
+        android:background="#99000000"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#66000000"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:id="@+id/txtTitulo"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="34dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Regresar"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_back"
+            android:layout_weight="2"
+            android:id="@+id/btnRegresar"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_reload_video"
+            android:layout_weight="2"
+            android:id="@+id/btnRecargar"
+            android:text="Siguiente"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/btnSiguiente"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_next_video"
+            android:text="Siguiente"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:layout_weight="1"
+            android:id="@+id/txtDescripción"
+            android:gravity="left"
+            android:textSize="22dp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/btnQuiz"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_quiz"
+            android:text="Siguiente"/>
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

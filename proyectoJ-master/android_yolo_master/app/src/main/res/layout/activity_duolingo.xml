@@ -1,0 +1,138 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPregunta"
+            android:textSize="29dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/gris"
+            android:text="¿Qué seña es esta?"
+            android:layout_margin="5dp"
+            />
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/IMGgif"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/como"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtTema"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="20dp"
+            android:text="Tema:"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="35dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+android:id="@+id/btnOpcion1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 1"
+                android:padding="10dp"
+                android:id="@+id/txtOpcion1"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:id="@+id/btnOpcion2"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 2"
+                android:padding="10dp"
+                android:id="@+id/txtOpcion2"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:id="@+id/btnOpcion3"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/txtOpcion3"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+android:padding="10dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:id="@+id/btnOpcion4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 4"
+                android:id="@+id/txtOpcion4"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>

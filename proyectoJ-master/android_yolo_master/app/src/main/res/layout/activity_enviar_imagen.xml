@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnviarImagen">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Publicar"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="80dp"
+        ></android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imagen"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/volver" />
+    <LinearLayout
+        android:layout_below="@+id/tool"
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+android:id="@+id/imagen2"
+android:src="@drawable/tomacamara"
+
+        >
+    </ImageView>
+    </LinearLayout>
+<EditText
+    android:id="@+id/comentario"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imagen"
+    android:hint="Agrega algun comentario"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    />
+    <Button
+        android:id="@+id/publica"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Publicar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/comentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boton"
+        />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="17dp"
+        app:fab_addButtonColorNormal="@color/iconis2"
+app:fab_addButtonColorPressed="@color/colorPrimary"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/galeria"
+            app:fab_colorNormal="@color/iconis2"
+            app:fab_size="mini"
+            app:fab_title="galeria"
+            android:id="@+id/agalerias"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/camera"
+            app:fab_colorNormal="@color/iconis2"
+            app:fab_size="mini"
+            app:fab_title="camara"
+            android:id="@+id/acamara"
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

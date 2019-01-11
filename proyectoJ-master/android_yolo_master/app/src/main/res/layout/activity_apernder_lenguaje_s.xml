@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApernderLenguajeS"
+android:background="#fcfcfc"
+    >
+
+    <android.support.design.widget.AppBarLayout
+
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+android:background="@drawable/fondoazul"
+            android:id="@+id/colaps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="64dp"
+            app:expandedTitleGravity="center_vertical"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="Aprende"
+app:collapsedTitleGravity="center"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+               app:collapseContentDescription="Aprende Lenguas"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+           android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/naranja">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+android:layout_marginLeft="275dp"
+                            android:background="@color/iconis2">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageButton
+                                android:background="@color/iconis2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/siguiente"
+                                android:onClick="click1"
+                                tools:ignore="OnClick" />
+                        </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+<LinearLayout
+    android:layout_width="275dp"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+       <ImageView
+           android:src="@drawable/manoarribaa"
+           android:layout_width="120dp"
+           android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Curso"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+
+            android:text="Aprender desde 0"
+            android:textColor="@color/amarillo"
+            android:textSize="15dp" />
+        <TextView
+            android:textColor="@color/white"
+            android:text="____________________"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="  -->Videos\n  -->Ejercisios\n  -->Imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/rojo">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="275dp"
+                                android:background="@color/colorPrimaryDark">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <ImageButton
+                                        android:background="@color/colorPrimaryDark"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/siguiente"
+                                        android:onClick="click2"
+                                        tools:ignore="OnClick" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/tigree"
+                                    android:layout_width="120dp"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Comunes"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+android:textStyle="normal"
+                                    android:text="Animales"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:text="____________________"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="  -->Ámbito: Escuela"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="275dp"
+                                android:background="@color/verde">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <ImageButton
+                                        android:onClick="click3"
+                                        android:background="@color/verde"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/siguiente"
+                                        tools:ignore="OnClick" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            >
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/gestos"
+                                    android:layout_width="120dp"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Saludos"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Principales de Cortesia"
+                                    android:textColor="@color/verde"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:text="____________________"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="  -->Ámbito: General"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/negro">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="275dp"
+                                android:background="@color/morado">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <ImageButton
+                                        android:onClick="click4"
+                                        android:background="@color/morado"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/siguiente"
+                                        tools:ignore="OnClick" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/coloress"
+                                    android:layout_width="120dp"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Colores"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Identifica el mundo"
+                                    android:textColor="@color/jj"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:text="____________________"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="  -->Ámbito:Cotidiano"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorr">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="275dp"
+                                android:background="@color/jj">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <ImageButton
+                                        android:onClick="click5"
+                                        android:background="@color/jj"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/siguiente"
+                                        tools:ignore="OnClick" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            >
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/lunes"
+                                    android:layout_width="120dp"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Dias de la Semana"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Expresa Fechas"
+                                    android:textColor="@color/rojo"
+                                    android:textSize="15dp" />
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:text="____________________"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="  -->Ambito: Cotidiano"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+<!--<android.support.v4.widget.NestedScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Aprender Lenguaje de señas."
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curso"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/curso" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aprender desde 0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="_____________"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--><!--Videos\n--><!--Ejercicios\n--><!--Imágenes"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/flecha" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comunes"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Animales"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/animales" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comúnes para \nexpresiones"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="____________"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--><!--Ámbito: \nEscuela"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/flecha" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saludos"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/saludos" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Principales de\ncortesía"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="___________"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--><!--Ámbito: \nGeneral"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/flecha" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colores"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawacoloressores" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Identifica\nel mundo"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="___________"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--><!--Ámbito: \nCotidiano"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/flecha" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginLeft="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Días de \nla semana"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/diassemana" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expresa fechas"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="____________"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--><!--Ámbito: \nCotidiano"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/flecha" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>-->

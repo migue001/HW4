@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_Visual">
+
+    <!-- TODO: Update blank fragment layout --><![CDATA[
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    ]]>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatt"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        app:backgroundTint="@color/iconis2"
+        android:src="@drawable/camera"
+        app:fabSize="normal"
+
+        />
+
+    <ImageButton
+
+        android:background="@color/white"
+        android:id="@+id/btnMicro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/microfono" />
+
+
+</RelativeLayout>

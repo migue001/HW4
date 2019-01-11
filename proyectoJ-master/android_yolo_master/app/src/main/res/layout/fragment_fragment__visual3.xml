@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/appbar_layout"
+                >
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                    android:id="@+id/bar">
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Aquí"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:drawableTop="@drawable/ic_action_about"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mail"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/gmail" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txcorreo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Correo oficial:"
+                            android:textSize="18dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="atencionaclientes@gmail.com"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"
+                            android:text="Correos alternativos:" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:layout_height="wrap_content"
+                            android:text="azulmarino-jairo22@outlook.com" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:text="tyler@gmail.com" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/cel"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/phone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:text="Telefonos de Contacto:"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="(+52) 715 113 6840"
+                            android:textColor="@android:color/holo_blue_dark" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="(+52) 715 128 88 82"
+                            android:textColor="@android:color/holo_blue_dark" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Información sobre la app:"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="340dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" App 1.8.0 Android"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Powered by Android Studio"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Compiled with SDK 27"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Database: SQlite"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Developed by
+J. Enrique Ramírez Sánchez
+and
+J. Miguel Rangel Contreras"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Copyright      2018"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="340dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App S.A de C.V."
+                        android:textStyle="italic"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="26dp"/>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All rigths reserved"
+                        android:textStyle="italic"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

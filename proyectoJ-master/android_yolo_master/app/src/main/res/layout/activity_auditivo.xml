@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tensorflow.demo.Auditivo"
+    android:background="@drawable/minimalista"
+    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sliderrr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button33"
+        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boton1"
+        android:drawableLeft="@drawable/volver"
+        android:text="Volver"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="volv"
+        />
+
+    <Button
+        android:id="@+id/button66"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button3"
+        android:background="@drawable/boton1"
+        android:drawableRight="@drawable/siguiente"
+        android:text="Siguiente"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:onClick="sigui2"
+        />
+</RelativeLayout>
+<!--<Button
+android:id="@+id/button3"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/boton1"
+android:drawableLeft="@drawable/volver"
+android:text="Volver"
+android:textColor="@color/white"
+android:textSize="20dp"
+android:textStyle="bold"
+android:onClick="volv"
+    />
+     <Button
+                android:drawableRight="@drawable/siguiente"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:background="@drawable/boton1"
+                android:id="@+id/button66"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Siguiente"
+                android:onClick="sigui2"
+                />-->

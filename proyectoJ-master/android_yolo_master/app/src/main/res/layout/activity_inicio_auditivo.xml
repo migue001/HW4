@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tensorflow.demo.Inicio_auditivo">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_nav2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menunavigatio2"
+        android:background="@color/colorPrimary"
+        ></android.support.design.widget.BottomNavigationView>
+    <FrameLayout
+        android:id="@+id/frag2"
+        android:layout_below="@id/main_nav2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

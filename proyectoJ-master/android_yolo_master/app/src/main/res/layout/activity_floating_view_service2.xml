@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tensorflow.demo.FloatingViewService2">
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/collapsed_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/mundo"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="37dp"
+                android:src="@drawable/cerrar"
+                tools:ignore="ContentDescription"
+                android:layout_marginTop="3dp"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/traducir"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:id="@+id/expanded_container"
+        android:background="@drawable/fondotraductor"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="6"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/cerrar"
+                            android:id="@+id/close_button"
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:layout_weight="5.4"
+                            android:layout_margin="8dp"
+                            android:id="@+id/txtTraducir"
+                            android:hint="Traducir"
+                            android:textColor="@color/colorPrimary"
+                            android:background="@drawable/boton_duolingo"
+                            android:padding="15dp"
+
+                            />
+                        <ImageButton
+                            android:layout_weight=".3"
+                            android:background="#fff"
+                            android:id="@+id/btnmicrotraducir"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/microfonoo"
+                            android:layout_height="match_parent" />
+                        <ImageButton
+                            android:layout_weight=".3"
+                            android:background="#fff"
+                            android:id="@+id/btncameratraducir"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/camaraaa"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/traducir"
+                            android:id="@+id/btnTraducir"
+                            android:background="@drawable/boton"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+
+                            />
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:padding="19dp"
+                            android:background="@drawable/botonn"
+                            android:id="@+id/btnLimpiar"
+                            android:src="@drawable/limpiar2"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <!-- gif view -->
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:gravity="bottom"
+                            android:layout_height="match_parent"
+                            android:padding="12dp"
+                            android:src="@drawable/carga"
+                            android:id="@+id/btnPausePlay"
+                            />
+                        <ImageButton
+                            android:id="@+id/notify_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/traducir2"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@color/white"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="¡Hola!"
+                            android:id="@+id/txtProgreso"
+                            android:layout_margin="10dp"
+                            android:paddingRight="92dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="30dp"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+                    </LinearLayout>
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hola"
+                        android:id="@+id/gif"
+                        android:background="@drawable/fondovideo"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/swvelocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Lento   "/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
